@@ -470,6 +470,8 @@
 #define CONFIG_PHY_SMSC
 /* Enable Atheros phy driver */
 #define CONFIG_PHY_ATHEROS
+#define CONFIG_PHY_VITESSE
+#define CONFIG_PHY_MSCC
 
 /*
  * NOR Size = 16 MiB
