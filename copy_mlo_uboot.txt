@@ -1,0 +1,13 @@
+# Display fdisk Details:
+echo "Fdisk details..."
+fdisk -l
+# Mount Boot directory of SD card:
+echo "Mounting SD card boot..."
+mount /dev/sdb1 ../boot
+echo "Copying MLO and U-Boot.img in SD card..."
+cp MLO ../boot/.
+cp u-boot.img ../boot/.
+# Un-Mount Boot directory of SD card:
+echo "Un-mounting SD card boot..."
+umount ../boot
+

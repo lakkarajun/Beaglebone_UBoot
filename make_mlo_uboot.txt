@@ -1,0 +1,6 @@
+echo "Removing all old obj files..."
+ make -j4 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- distclean
+echo "Creating .config file..."
+ make -j4 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- raju_defconfig
+echo "Making Beaglebone Black MLO and U-Boot Images..."
+ make -j4 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-  
