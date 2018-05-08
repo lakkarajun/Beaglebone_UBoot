@@ -99,6 +99,7 @@ void set_default_env(const char *s)
 {
 	int flags = 0;
 
+	puts("Raju: set_default_env()\n");
 	if (sizeof(default_environment) > ENV_SIZE) {
 		puts("*** Error - default environment is too large\n\n");
 		return;

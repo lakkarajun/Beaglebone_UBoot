@@ -248,6 +248,7 @@ void am33xx_spl_board_init(void)
 {
 	int mpu_vdd;
 
+	puts("Raju:am33xx_spl_board_init:\n");
 	if (read_eeprom() < 0)
 		puts("Could not get board ID.\n");
 
@@ -551,6 +552,7 @@ int board_init(void)
 {
 	u32 sys_reboot;
 
+	puts("Raju: board_init()\n");
 	sys_reboot = readl(PRM_RSTST);
 	if (sys_reboot & (1 << 9))
 		puts("Reset Source: IcePick reset has occurred.\n");
@@ -663,6 +665,7 @@ int board_late_init(void)
 	int rc;
 	char *name = NULL;
 
+	puts("Raju: board_late_init()\n");
 	rc = read_eeprom();
 	if (rc)
 		puts("Could not get board ID.\n");
