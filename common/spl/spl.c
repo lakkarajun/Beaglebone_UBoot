@@ -370,6 +370,7 @@ static int spl_load_image(struct spl_image_info *spl_image, u32 boot_device)
 	struct spl_boot_device bootdev;
 	struct spl_image_loader *loader = spl_ll_find_loader(boot_device);
 
+	puts("Raju: spl_load_image()\n");
 	bootdev.boot_device = boot_device;
 	bootdev.boot_device_name = NULL;
 	if (loader)

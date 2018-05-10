@@ -248,7 +248,7 @@ void am33xx_spl_board_init(void)
 {
 	int mpu_vdd;
 
-	puts("Raju:am33xx_spl_board_init:\n");
+	puts("Raju:am33xx_spl_board_init():\n");
 	if (read_eeprom() < 0)
 		puts("Could not get board ID.\n");
 

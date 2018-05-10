@@ -83,6 +83,7 @@ efi_status_t efi_exit_func(efi_status_t ret)
 
 static efi_status_t efi_unsupported(const char *funcname)
 {
+	puts("Raju: efi_unsupported()\n");
 	debug("EFI: App called into unimplemented function %s\n", funcname);
 	return EFI_EXIT(EFI_UNSUPPORTED);
 }
