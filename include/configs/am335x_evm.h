@@ -24,7 +24,7 @@
 # define CONFIG_LZO
 #endif
 
-#define CONFIG_SYS_BOOTM_LEN		(16 << 20)
+#define CONFIG_SYS_BOOTM_LEN		(32 << 20)
 
 #define MACH_TYPE_TIAM335EVM		3589	/* Until the next sync */
 #define CONFIG_MACH_TYPE		MACH_TYPE_TIAM335EVM
