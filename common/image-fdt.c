@@ -174,6 +174,7 @@ int boot_relocate_fdt(struct lmb *lmb, char **of_flat_tree, ulong *of_size)
 		printf("   Using Device Tree in place at %p, end %p\n",
 		       of_start, of_start + of_len - 1);
 	} else {
+		printf("Raju:%s: Device tree at %p ... %p (len=%ld [0x%lX])\n", __func__, fdt_blob, fdt_blob + *of_size - 1, of_len, of_len);
 		debug("## device tree at %p ... %p (len=%ld [0x%lX])\n",
 		      fdt_blob, fdt_blob + *of_size - 1, of_len, of_len);
 
@@ -291,6 +292,7 @@ int boot_get_fdt(int flag, int argc, char * const argv[], uint8_t arch,
 				return 1;
 		}
 #endif
+		printf("Raju:%s: Checking for 'FDT'/'FDT Image' at %08lx\n", __func__, fdt_addr);
 		debug("## Checking for 'FDT'/'FDT Image' at %08lx\n",
 		      fdt_addr);
 

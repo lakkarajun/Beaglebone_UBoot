@@ -314,6 +314,7 @@ static void boot_jump_linux(bootm_headers_t *images, int flag)
 
 	debug("## Transferring control to Linux (at address %08lx)" \
 		"...\n", (ulong) kernel_entry);
+	printf("Raju:%s: Transferring control to Linux (at address %08lx)...\n", __func__, (ulong) kernel_entry);
 	bootstage_mark(BOOTSTAGE_ID_RUN_OS);
 	announce_and_cleanup(fake);
 
